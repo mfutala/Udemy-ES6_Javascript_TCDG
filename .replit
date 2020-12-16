@@ -1,2 +1,2 @@
 language = "nodejs"
-run = "nodejs reduce.js "
+run = "nodejs destructuring.js "
