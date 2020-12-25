@@ -1,2 +1,2 @@
 language = "nodejs"
-run = "nodejs destructuring.js "
+run = "nodejs generators.js "

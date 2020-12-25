@@ -93,7 +93,7 @@ const classesAsObject = classes;
 classesAsObject.map(([subject,time,teacher]) => {
     return {subject,time,teacher};                               
 });
-*/
+
 const numbers = [1, 2, ...[3, ...[8,9,10]]];
 
 function double ([x, ...more ]) {
@@ -102,6 +102,7 @@ function double ([x, ...more ]) {
 
 console.log(double(numbers));
 console.log(numbers);
+*/
 
 let destinations = ['Prague', 'London', 'Sydney', 'Belfast', 'Rome',
   'Aruba', 'Paris', 'Bora Bora', 'Barcelona', 'Rio de Janeiro',
@@ -114,12 +115,25 @@ const [city, ...rest] = destination;
   if(city === place) {
    return true; 
   } else {
-    return contains(...[place,rest]);
+    return contains(place, rest);
   }
   
 }
 
-contains('Barcelona', destinations);
+console.log(contains('Barcelona', destinations));
 contains('Nashville', destinations);
 contains('Paris', destinations);
 contains('Mars', destinations)
+
+/*
+let vocabulary = ['hello',
+  ...['happy', 'cheerful', 'merry', 'glad'],
+  ...['tired', 'sleepy', 'fatigued', 'drained'],
+  ...['excited', 'eager', 'enthused', 'animated']
+];
+
+
+
+console.log(vocabulary.forEach(word => console.log(word) ));
+
+*/
